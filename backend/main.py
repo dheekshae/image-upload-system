@@ -1,5 +1,9 @@
 from dotenv import load_dotenv
 load_dotenv()
+
+import os
+os.makedirs("uploads", exist_ok=True)
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
