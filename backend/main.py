@@ -26,6 +26,7 @@ app.include_router(files_router)
 def home():
     return {"message": "Backend is running 🚀"}
 
+
 from fastapi.middleware.cors import CORSMiddleware
 
 ALLOWED_ORIGINS = [
